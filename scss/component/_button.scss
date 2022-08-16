@@ -1,0 +1,58 @@
+.btn {
+  margin-top: 15px;
+  width: 100%;
+  color: #fff;
+  border: none;
+  padding: 10px 0;
+  text-transform: uppercase;
+  border-radius: 5px;
+  @include breakpoint {
+    padding: 10px 30px;
+  }
+}
+
+.default {
+  background-color: $base-color3;
+  &:hover {
+    background-color: lighten($base-color3, 15%);
+    @include transitions;
+  }
+}
+
+.error {
+  background-color: $base-color7;
+  &:hover {
+    background-color: lighten($base-color7, 15%);
+    @include transitions;
+  }
+}
+
+.info {
+  background-color: $base-color4;
+  &:hover {
+    background-color: lighten($base-color4, 15%);
+    @include transitions;
+  }
+}
+
+.success {
+  background-color: $base-color6;
+  &:hover {
+    background-color: lighten($base-color6, 15%);
+    @include transitions;
+  }
+}
+
+.warning {
+  background-color: $base-color5;
+  &:hover {
+    background-color: lighten($base-color5, 15%);
+    @include transitions;
+  }
+}
+
+.btn + .btn {
+  @include breakpoint {
+    margin-left: 10px;
+  }
+}

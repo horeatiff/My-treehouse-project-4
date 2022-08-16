@@ -1,0 +1,11 @@
+@mixin breakpoint {
+  @media (min-width: $media-breakpoint) {
+    @content;
+  }
+}
+
+@mixin transitions {
+  transition-property: background-color;
+  transition-timing-function: ease-out;
+  transition-duration: 600ms;
+}
